@@ -1,3 +1,3 @@
-**Angular2 Upgrade Experiments **
+## Angular2 Upgrade Experiments
  
 Example of comunication between NG1 and NG2 using a Bridge Service that implements the `Subject` class of `RxJS`
