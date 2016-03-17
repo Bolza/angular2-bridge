@@ -6,7 +6,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import * as angular from 'angular';
 const upgradeAdapter = new UpgradeAdapter();
 
-var app = angular.module('ExampleModule', []);
+var app = angular.module('ExampleModule');
 
 // olNavBar NG2 -> NG1 //
 import {SomeComponent} from '/ng2/someComponent';

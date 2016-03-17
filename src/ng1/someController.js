@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    var ExampleModule = angular.module('ExampleModule');
+    var ExampleModule = angular.module('ExampleModule', []);
 
     ExampleModule.controller('SomeController', ['Bridge', function (Bridge) {
         Bridge.on('someEvent', function(val) {
