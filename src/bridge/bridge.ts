@@ -17,4 +17,10 @@ export class Bridge {
     		eventMap[key].next(value)
     	}
     }
+
+    remove(key) {
+        if (eventMap[key]) {
+            eventMap[key].dispose()
+        }
+    }
 }
