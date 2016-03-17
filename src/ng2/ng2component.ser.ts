@@ -1,5 +1,5 @@
 import {Component, Input} from 'angular2/core';
-import {Bridge} from 'components/bridge/bridge.ser';
+import {Bridge} from '../bridge/bridge.ser';
 let theBridge 
 
 @Component({
