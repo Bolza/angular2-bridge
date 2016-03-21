@@ -3,16 +3,18 @@ import {Bridge} from '../bridge/bridge';
 let theBridge 
 
 @Component({
+	providers: [Bridge],
     selector: 'some-component',
     template: `<div [model]="'someEvent'" (click)="select('someValue')"></div>`
 })
 export class SomeComponent {
     @Input() model;
-    
-    constructor() {
-        theBridge = new Bridge()
+
+    constructor(bridge: Bridge) {
+        this.bridge = bridge
     }
+    
     select(value) {
-        theBridge.save(this.model, value)
+        this.bridge.save(this.model, value)
     }
 }
